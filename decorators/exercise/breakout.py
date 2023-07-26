@@ -8,18 +8,15 @@
 class MonitorDecorator:
     def __init__(self, function):
         self.function = function
-        self._memory = []
+        self.memory = []
     
     def __call__(self, *args, **kwargs):
+        num = str(args) + str(kwargs)
+        if num in self.memory:
+            return "This value has already been given"
+        else:
+            self.memory.append(num)
         return self.function(*args, **kwargs)
-        self._memory.append(result)
-        if result in self._memory:
-           if self._memory.count(result) == 1:
-               return result
-           else:
-               return f"This number has been called {self._memory.count(result)} times"
-       
-
 
 
 
@@ -28,5 +25,5 @@ def what_is_this_number(num):
     return f'The number entered is {num}!'
 
 print(what_is_this_number(4))
-print(what_is_this_number(3))
+print(what_is_this_number(4))
 
