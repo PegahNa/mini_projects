@@ -1,22 +1,22 @@
-nums = [2, 4, 1, 9, 6]
+# nums = [2, 4, 1, 9, 6]
 
-nums_iter = iter(nums)
-print(nums_iter)
+# nums_iter = iter(nums)
+# print(nums_iter)
 
-print(next(nums_iter))
-print(next(nums_iter))
-print(next(nums_iter))
-print(next(nums_iter))
-print(next(nums_iter))
+# print(next(nums_iter))
+# print(next(nums_iter))
+# print(next(nums_iter))
+# print(next(nums_iter))
+# print(next(nums_iter))
 
 # what happens next when our list comes to an end?
 # uncomment and try
 
-#print(next(nums_iter))
+# print(next(nums_iter))
 
 # ALTERNATIVELY  - traversing
 
-#nums_iter = iter({1, 2, 3, 4, 5})
+# nums_iter = iter({1, 2, 3, 4, 5})
 # print(nums_iter.__next__())
 # print(nums_iter.__next__())
 # print(nums_iter.__next__())
@@ -32,7 +32,7 @@ print(next(nums_iter))
 The dir() function can be used to see the list of available methods on the iterable object.
 '''
 # from pprint import pprint as pp
-#
+# #
 # pp(dir(nums_iter))
 
 
@@ -42,16 +42,16 @@ The dir() function can be used to see the list of available methods on the itera
 # # Create our own ITERATOR
 #
 # class EvenNumbers:
-#
+
 #     def __iter__(self):
 #         self.num = 0
 #         return self
-#
+
 #     def __next__(self):
-#
+
 #         self.num += 2
 #         return self.num
-#
+
 #
 # # run code
 #
