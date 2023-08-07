@@ -1,8 +1,8 @@
 import itertools
-​
+
 # 1. Count: This function takes two optional arguments and returns an iterator.
 # print the first four even numbers
-​
+
 # result = itertools.count(start=0, step=2)
 #
 # for number in result:
@@ -11,14 +11,14 @@ import itertools
 #         print(number)
 #     else:
 #         break
-​
+
 #################################
 # 2. Cycle: This function takes in an iterable and goes over it indefinitely​.
 # print 2 three times
-​
+
 # result = itertools.cycle('12345')
 # counter = 0
-#
+
 # for number in result:
 #     if counter < 10:
 #         print(number)
@@ -28,10 +28,10 @@ import itertools
 #
 # ###################################
 # # 3. Repeat: Takes an optional times parameter that can be used as a termination condition.
-# # print CodeFirstGirls two times
-#
+# print CodeFirstGirls two times
+
 # result = itertools.repeat('CodeFirstGirls', times=2)
-#
+
 # for word in result:
 #     print(word)
 #
@@ -43,9 +43,9 @@ import itertools
 # list_one = ['a', 'b', 'c']
 # list_two = ['d', 'e', 'f']
 # list_three = ['1', '2', '3']
-#
+
 # result = itertools.chain(list_one, list_two, list_three)
-#
+
 # for element in result:
 #     print(element)
 #
@@ -58,9 +58,9 @@ import itertools
 #
 # names = ['Alice', 'Raja', 'Fatima']
 # have_flu = [True, True, False]
-#
+
 # result = itertools.compress(names, have_flu)
-#
+
 # for element in result:
 #     print(element)
 #
@@ -69,22 +69,22 @@ import itertools
 # # 6. DropWhile: An iterable and a function (predefined or lambda) is passed to it.
 # # Based on the condition inside the function, dropwhile keeps on dropping values from the iterable
 # # until it encounters the first element that evaluates to false.
-​
+
 # Python code to demonstrate the working of
 # dropwhile()
-​
-​
+
+
 # Function to be passed
 # as an argument
 # def is_positive(n):
 # 	return n > 0
-#
+
 # value_list =[5, 6, 3,-8, -4, 2]
 # result = list(itertools.dropwhile(is_positive, value_list))
-#
+
 # print(result)
-​
-​
+
+
 # Example 2 ##############################################
 # my_list = [5, 5, 1, 2, 5]
 #
@@ -120,7 +120,7 @@ import itertools
 # # Slice from index 2 to 4
 # result = itertools.islice('CodeFirstGirls', 2, 5)
 # print(list(result))
-​
+
 # ######################################
 #
 # # 9. GroupBy: groups objects in an iterable.
@@ -134,9 +134,9 @@ import itertools
 #         {'name': 'Elena', 'age': 19},
 #         {'name': 'Betsy', 'age': 19},
 #         {'name': 'Ling', 'age': 23}]
-#
+
 # grouped_data = itertools.groupby(data, key=lambda x: x['age'])
-#
+
 # for key, grp in grouped_data:
 #     print('{}: {}'.format(key, list(grp)))
 #
@@ -168,7 +168,7 @@ import itertools
 #
 # # zip_longest allows all items
 # print(list(itertools.zip_longest(x, y)))
-​
+
 #
 # # create our own grouper utility function
 #
