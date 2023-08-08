@@ -1,0 +1,10 @@
+def hash_func(string):
+    hash_value = 0
+    for char in string:
+        hash_value += ord(char)
+    return hash_value
+
+AB = hash_func("AB")
+BA = hash_func("BA")
+
+print("both", f'{AB} and {BA}')
